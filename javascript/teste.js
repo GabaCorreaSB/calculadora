@@ -41,6 +41,9 @@ function conta(){
         case '/':
             value_b === 0 ? alert('Não é possível divisão por zero!') : conta = value_a  / value_b;
             break;
+        case '%':
+            value_b === 0 ? alert('Não é possível divisão por zero!') : conta = value_a  / value_b;
+            break;
         case 'X':
             conta = value_a * value_b;
             break;
