@@ -21,7 +21,7 @@ function conta(){
         return;
     }
     
-    var operadores = ['+', '-', '/', '*', 'x'];
+    var operadores = ['+', '-', '/', '*', 'x', 'X'];
     var operator = operador.value;
     const isInArray = operadores.includes(operator)
 
@@ -31,20 +31,26 @@ function conta(){
         return;
     }
 
-    if (operator == "+"){
-        conta = value_a + value_b
-    } else if (operator == '-'){
-        conta = value_a - value_b
-    } else if (operator == '/'){
-        if (value_b == 0){
-            alert('Não é possivel divisão por zero !')
-        } else {
-            conta = value_a / value_b
-        }
-    } else if (operator == '*' || operator == 'x'){
-        conta = value_a * value_b
+    switch (operator){
+        case '+':
+            conta = value_a + value_b;
+            break;
+        case '-':
+            conta = value_a - value_b;
+            break;
+        case '/':
+            value_b === 0 ? alert('Não é possível divisão por zero!') : conta = value_a  / value_b;
+            break;
+        case 'X':
+            conta = value_a * value_b;
+            break;
+        case '*':
+            conta = value_a * value_b;
+            break;
+        case 'x':
+            conta = value_a * value_b;
+            break;
     }
-
     var check = conta - Math.floor(conta) !== 0;
 
     if (check){
