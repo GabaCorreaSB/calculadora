@@ -21,7 +21,7 @@ function conta(){
         return;
     }
     
-    var operadores = ['+', '-', '/', '*', 'x', 'X'];
+    var operadores = ['+', '-', '/', '*', 'x', 'X', '%'];
     var operator = operador.value;
     const isInArray = operadores.includes(operator)
 
