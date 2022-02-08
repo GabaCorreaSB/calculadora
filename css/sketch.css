@@ -1,10 +1,32 @@
-.header {
-    overflow: hidden;
-    background-color: #ffda00;
-    padding: 20px 10px;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.header a {
+.container-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    color: #1c1c1c;
+    filter: drop-shadow(1px 3px 3px black);
+    font-size: 28px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #ffda00;
+    padding: 8px 15px;
+}
+
+/*.header a {
     float: left;
     color: black;
     text-align: center;
@@ -13,70 +35,87 @@
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+}*/
+
+.info {
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+.header a.logo img{
+    height: 75px;
+    width: auto;
 }
 
-.header a:hover{
+.header a.logo:hover{
     background-color: #ffe800;
     color: black;
 }
 
-.header a.active{
+a.titulo:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.header a.info{
     background-color: orange;
     color:black;
 }
 
-.header-right{
-    float: right;
-}
 
 body{
-    background-image: url(/images/fundo.jpeg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
 }
-
 main {
     border-radius: 25px;
     padding: 20px; 
     display: flex;
     justify-content: center;
-    width: 1000px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 120px;
     margin-bottom: 20px;
 }
 
-h1 {
+/*footer{
+    height: 100px;
     width: 1000px;
-    color: white;
-    justify-content: center;
-    text-align: center;
-}
-
-h3 {
-    height: auto;
-    font-size: 100px;
-    color: black;
-    justify-content: center;
-    text-align: center;
-}
-
-.input-field {
-    margin-top: 7px;
-}
-
-.button-field {
+    display: flex;
+    background-color: red;
+    margin: 0 auto;
     margin-bottom: 20px;
+    border-radius: 25px;
+    padding: 20px; 
+}*/
+
+
+button{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-@media screen and (max-width: 500px){
+label{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+}
+
+.resultado {
+    margin-top: 10px;
+}
+
+input{
+    margin-bottom: 20px;
+    font-size: 40px;
+    border-radius: 7px;
+}
+
+
+@media screen and (max-width: 700px){
     .header a {
         float: none;
         display: block;
@@ -85,5 +124,19 @@ h3 {
     
     .header-right{
         float: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    main{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    input{
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
