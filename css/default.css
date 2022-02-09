@@ -5,15 +5,30 @@ a {
     text-decoration: none;
 }
 
+.container{
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
 .container-logo{
     height: 100%;
     display: flex;
     align-items: center;
 }
 
+.icon img{
+    width: 100%;
+    height: 100%;
+}
+
 .titulo {
-    color: #1c1c1c;
-    filter: drop-shadow(1px 3px 3px black);
+    color: #c1c1c1;
+    filter: drop-shadow(1px 3px 3px rgb(100, 100, 100));
     font-size: 28px;
 }
 
@@ -22,7 +37,7 @@ a {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    background-color: #ffda00;
+    background-color: black;
     padding: 6px 15px;
 }
 
@@ -55,17 +70,17 @@ a {
 }
 
 .header a.logo:hover{
-    background-color: #ffe800;
+    background-color: rgb(100, 100, 100);
     color: black;
 }
 
 a.titulo:hover{
     background-color: transparent;
-    color: black;
+    color: rgb(100, 100, 100);
 }
 
 .header a.info{
-    background-color: orange;
+    background-color: #c1c1c1;
     color:black;
 }
 
@@ -73,6 +88,7 @@ a.titulo:hover{
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+
 main {
     border-radius: 25px;
     padding: 20px; 
@@ -95,8 +111,16 @@ main {
 }*/
 
 
-button{
+.container .buttons{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: 2px;
+    width: 62px;
+}
+
+.cor_btn{
+    color: black;
+    font: bold;
+    background-color:#c1c1c1;
 }
 
 label{
@@ -104,8 +128,8 @@ label{
     color: rgb(170, 170, 170);
 }
 
-.resposta {
-    margin-top: 20px;
+.operador {
+    margin-bottom: 5px;
 }
 
 input{

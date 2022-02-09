@@ -12,36 +12,39 @@
 <body>
     <header class="header">
         <div class="container-logo">
-            <a href="index.html" class="logo"><img src="images/calculadora.png"></a>
+            <a href="index.html" class="logo"><img src="images/calculadora.png" alt="Icone de uma calculadora com botões roxos."></a>
             <a class="titulo" href="index.html">&nbsp;Calculadora Online</a>
         </div>
         <div class="header-right">
-            <a class="info" href="sketch.html"><i class="fas fa-user-circle"></i>             Informações do Criador</a>
+            <a class="info" href="sketch.html"><i class="fas fa-user-circle"></i>&nbsp;Informações do Criador</a>
         </div>
     </header>
 
     <main>
         <div>
-            <div>
+            <div class="container-fluid container">
+                <div class="mb-3 icon">
+                    <img src="images/calculator.png">
+                </div>
                 <div class="mb-3">
                     <label for="numero_1" class="form-label">Primeiro Número:</label>
                     <input type="text" class="form-control" id="numero_1" placeholder="0">
                   </div>
                   <div class="mb-3">
-                    <label for="operador" class="form-label">Operador:</label>
-                    <input type="text" class="form-control" id="operador" placeholder="+">
-                  </div>
-                  <div class="mb-3">
                     <label for="numero_2" class="form-label">Segundo Número:</label>
                     <input type="text" class="form-control" id="numero_2" placeholder="0">
                   </div>
-                <div>
-                    <button type="button" class="btn btn-primary" onclick="conta()">Calcular</button>
-                </div>
-            </div>
-            <div>
-                <div class="mb-3">
-                    <label for="resultado" class="resposta">Resultado:</label>
+                  <div class="mb-3">
+                    <label for="operador" class="form-label operador">Operador:</label><br>
+                    <div id="botoes">
+                        <button type="submit" class="btn cor_btn buttons" onclick="soma()">+</button>
+                        <button type="submit" class="btn cor_btn buttons" onclick="minus()">-</button>
+                        <button type="submit" class="btn cor_btn buttons" onclick="times()">*</button>
+                        <button type="submit" class="btn cor_btn buttone buttons" onclick="divide()">/</button>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="resultado" class="form-label">Resultado:</label>
                     <input type="text" class="form-control" id="resultado" placeholder="0">
                   </div>
                 </div>
