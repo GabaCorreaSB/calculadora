@@ -8,14 +8,6 @@ function soma(){
     let value_a = Number(a.value);
     let value_b = Number(b.value);
     
-    
-    // && AND
-    // || OR
-    // != é diferente
-    // !== é diferente e verifico o tipo
-    // = change evry
-    // == igual
-    // === igual e verfic type
 
     if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
         alert("Não é um número, favor coloque um número ai bro !");
@@ -45,14 +37,6 @@ function minus(){
     let value_a = Number(a.value);
     let value_b = Number(b.value);
     
-    
-    // && AND
-    // || OR
-    // != é diferente
-    // !== é diferente e verifico o tipo
-    // = change evry
-    // == igual
-    // === igual e verfic type
 
     if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
         alert("Não é um número, favor coloque um número ai bro !");
@@ -82,14 +66,6 @@ function times(){
     let value_a = Number(a.value);
     let value_b = Number(b.value);
     
-    
-    // && AND
-    // || OR
-    // != é diferente
-    // !== é diferente e verifico o tipo
-    // = change evry
-    // == igual
-    // === igual e verfic type
 
     if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
         alert("Não é um número, favor coloque um número ai bro !");
@@ -119,15 +95,6 @@ function divide(){
     let value_a = Number(a.value);
     let value_b = Number(b.value);
     
-    
-    // && AND
-    // || OR
-    // != é diferente
-    // !== é diferente e verifico o tipo
-    // = change evry
-    // == igual
-    // === igual e verfic type
-
     if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
         alert("Não é um número, favor coloque um número ai bro !");
         return;
