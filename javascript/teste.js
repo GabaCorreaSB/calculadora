@@ -1,21 +1,18 @@
 function soma(){
 
-    let a = document.getElementById("numero_1");
-    let b = document.getElementById("numero_2");
+    let a = Number(document.getElementById("numero_1").value.replace(',', '.'));
+    let b = Number(document.getElementById("numero_2").value.replace(',', '.'));
     let resposta = document.getElementById("resultado");
-     
-    let conta = "";
-    let value_a = Number(a.value);
-    let value_b = Number(b.value);
     
+    var conta = "";
 
-    if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
+    if (Number.isNaN(a) || Number.isNaN(b)) {
         alert("Não é um número, favor coloque um número ai bro !");
         return;
     }
     
 
-    conta = value_a + value_b
+    conta = a + b
  
     var check = conta - Math.floor(conta) !== 0;
 
@@ -29,22 +26,19 @@ function soma(){
 
 function minus(){
 
-    let a = document.getElementById("numero_1");
-    let b = document.getElementById("numero_2");
+    let a = Number(document.getElementById("numero_1").value.replace(',', '.'));
+    let b = Number(document.getElementById("numero_2").value.replace(',', '.'));
     let resposta = document.getElementById("resultado");
      
     let conta = "";
-    let value_a = Number(a.value);
-    let value_b = Number(b.value);
-    
 
-    if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
+    if (Number.isNaN(a) || Number.isNaN(b)) {
         alert("Não é um número, favor coloque um número ai bro !");
         return;
     }
     
 
-    conta = value_a - value_b
+    conta = a - b
  
     var check = conta - Math.floor(conta) !== 0;
 
@@ -58,22 +52,18 @@ function minus(){
 
 function times(){
 
-    let a = document.getElementById("numero_1");
-    let b = document.getElementById("numero_2");
+    let a = Number(document.getElementById("numero_1").value.replace(',', '.'));
+    let b = Number(document.getElementById("numero_2").value.replace(',', '.'));
     let resposta = document.getElementById("resultado");
      
     let conta = "";
-    let value_a = Number(a.value);
-    let value_b = Number(b.value);
-    
 
-    if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
+    if (Number.isNaN(a) || Number.isNaN(b)) {
         alert("Não é um número, favor coloque um número ai bro !");
         return;
     }
     
-
-    conta = value_a * value_b
+    conta = a * b
  
     var check = conta - Math.floor(conta) !== 0;
 
@@ -87,20 +77,18 @@ function times(){
 
 function divide(){
 
-    let a = document.getElementById("numero_1");
-    let b = document.getElementById("numero_2");
+    let a = Number(document.getElementById("numero_1").value.replace(',', '.'));
+    let b = Number(document.getElementById("numero_2").value.replace(',', '.'));
     let resposta = document.getElementById("resultado");
      
     let conta = "";
-    let value_a = Number(a.value);
-    let value_b = Number(b.value);
     
-    if (Number.isNaN(value_a) || Number.isNaN(value_b)) {
+    if (Number.isNaN(a) || Number.isNaN(b)) {
         alert("Não é um número, favor coloque um número ai bro !");
         return;
     }
     
-    value_b === 0 ? alert("Não pode dividir por zero!") : conta = value_a / value_b
+    b === 0 ? alert("Não pode dividir por zero!") : conta = a / b
  
     var check = conta - Math.floor(conta) !== 0;
 
