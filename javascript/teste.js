@@ -3,9 +3,7 @@ function soma(){
     let a = Number(document.getElementById("numero_1").value.replace(',', '.'));
     let b = Number(document.getElementById("numero_2").value.replace(',', '.'));
     let resposta = document.getElementById("resultado");
-     
-    console.log(a)
-    console.log(b)
+    
     var conta = "";
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
